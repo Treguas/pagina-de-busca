@@ -1,0 +1,98 @@
+:root {
+    /* CSS variables */
+    --color-background: #7e90ac;
+    --color-secondary-background: #393e46;
+    --color-primary-lighter: #32e0c4;
+    --color-title-in-primary: #ffffff;
+    --color-text-base: #ffffff;
+    --color-default: #333;
+  }
+
+  * {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  a {
+    color: inherit; /*herdar a cor padrao para nao ficar colorido o link*/
+  } 
+
+  body {
+    font: 500 1.6rem Poppins;
+    color: var(--color-text-base);
+    background: var(--color-background);
+  }
+
+  #wrapper {
+    text-align: center;
+    padding: 32px;
+  }
+
+  #wrapper img {
+    border-radius: 50%;
+    border: 5px solid var(--color-primary-lighter);
+    margin-bottom: 32px;
+    height: 300px;
+  }
+
+  #wrapper h1 {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 400;
+  }
+
+  #wrapper h2 {
+    font-size: 21px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+  }
+
+  #wrapper p {
+    max-width: 50%;
+    margin: 32px auto;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  /*--MODAL--*/
+  .modal-overlay {
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .modal {
+    background-color: whitesmoke;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+  }
+
+  .modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+  }
+
+  /*MODAL ACTIVE*/
+  .modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+.mdl-mini-footer {
+  background-color: var(--color-background)!important;
+  width: 100%;
+  bottom: 0;
+}
